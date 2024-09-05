@@ -28,10 +28,10 @@ const Data = mongoose.model('Form', DataSchema)
 
 
 // // controllers
-// app.get('/api/v1/tasks', (req, res) => {
+app.get('/api', (req, res) => {
 
-//         res.send('Get request received')
-// })
+        res.send('Get request received')
+})
 
 app.post('/api', async (req, res) => {
         try {
