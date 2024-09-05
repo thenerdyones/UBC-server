@@ -33,7 +33,7 @@ const Data = mongoose.model('Form', DataSchema)
 //         res.send('Get request received')
 // })
 
-app.post('/api/v1/tasks', async (req, res) => {
+app.post('/api', async (req, res) => {
         try {
                 const { name, phone, email, message } = req.body
                 const newDataEntry = new Data({ name, phone, email, message })
